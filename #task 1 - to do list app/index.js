@@ -9,7 +9,6 @@ function add(){
     }
     else{
         console.log(text);
-        task.innerHTML += 
     }
     
 }

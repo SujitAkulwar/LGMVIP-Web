@@ -37,6 +37,7 @@ h1{
 #new,#add{
     background-color: rgb(255, 198, 208);
     height: 5vh;
+    padding: 1%;
 }
 #new:hover,#add:hover{
     background-color: rgba(255, 230, 235);
