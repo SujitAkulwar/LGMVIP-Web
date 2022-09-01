@@ -1,4 +1,4 @@
-var submit = document.getElementById('add');
+var submit = document.getElementById('Addbutton');
 var list = document.getElementById("list");
 submit.addEventListener("click", add);
 
@@ -9,9 +9,9 @@ function add(){
     }
     else{
         console.log(text);
-        
-        
-        
+        const nav = document.createElement("nav");
+        nav.innerHTML = `<div id="task-name">`+text+`</div>
+        <button id="delete-task">X</button>`;
+        list.append(nav);
     }
-    
 }

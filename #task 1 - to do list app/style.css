@@ -13,10 +13,10 @@ body{
 h1{
     width: 60vh;
     height: 100%;
-    margin-left: 35%;
     margin-top: 5%;
     color: black;
     text-shadow: 1px 1px rgb(255, 255, 255);
+    margin-left: 38rem;
 }
 .container{
     width: 60vh;
@@ -34,12 +34,12 @@ h1{
     margin: auto;
     padding: auto;
 }
-#new,#add{
+#new{
     background-color: rgb(255, 198, 208);
     height: 5vh;
     padding: 1%;
 }
-#new:hover,#add:hover{
+#new:hover{
     background-color: rgba(255, 230, 235);
 }
 #new{
@@ -54,7 +54,7 @@ h1{
     margin: 0;
     margin-left: 30%;
 }
-#tasks{
+#tasks,nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -77,4 +77,23 @@ h1{
 }
 #delete-task:hover,#task-name:hover{
     background-color: rgb(255, 255, 255);
+}
+#add {
+    background: url(ok.png) no-repeat;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    height:5vh;
+    width: 10vh;
+    border: none;
+}
+#Addbutton{
+    margin: 0;
+    padding: 0;
+    width: 10vh;
+    height: 5vh;
+}
+#h{
+    font-size: 3rem;
+    margin-left: 35rem;
 }
