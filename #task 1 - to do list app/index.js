@@ -1,5 +1,8 @@
 var submit = document.getElementById('Addbutton');
 var list = document.getElementById("list");
+var tasks = document.getElementById("tasks");
+var counter = 2;
+
 submit.addEventListener("click", add);
 
 function add(){
@@ -10,8 +13,13 @@ function add(){
     else{
         console.log(text);
         const nav = document.createElement("nav");
-        nav.innerHTML = `<div id="task-name">`+text+`</div>
-        <button id="delete-task">X</button>`;
+        nav.innerHTML = `<input type="checkbox" id="check"><div id="task-name" onclick="done(this)">`+text+`</div>
+        <button id="delete-task" onclick="del(this)">X</button>`;
+        nav.setAttribute
         list.append(nav);
     }
+}
+
+function del(x){
+    x.parentNode.style.display='none';
 }

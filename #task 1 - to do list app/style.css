@@ -97,3 +97,19 @@ h1{
     font-size: 3rem;
     margin-left: 35rem;
 }
+#task{
+    margin-top: 5vh;
+}
+#task-name{
+    width: 58vh;
+}
+#check{
+    height: 7vh;
+    width: 7vh;
+    margin: 0;
+    padding: 0;
+}
+input{
+    margin: 0;
+    padding: 0;
+}
