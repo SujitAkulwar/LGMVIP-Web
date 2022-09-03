@@ -4,6 +4,7 @@
     margin: 0;
     font-weight: 600;
     font-family: 'Poppins';
+    cursor: pointer;
 }
 body{
     height: 100%;
@@ -78,20 +79,17 @@ h1{
 #delete-task:hover,#task-name:hover{
     background-color: rgb(255, 255, 255);
 }
-#add {
-    background: url(ok.png) no-repeat;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    height:5vh;
-    width: 10vh;
-    border: none;
-}
 #Addbutton{
     margin: 0;
     padding: 0;
     width: 10vh;
     height: 5vh;
+}
+#Addbutton input{
+    background: url(ok.png) no-repeat;
+    height: 5vh;
+    width: 5vh;
+    border: none;
 }
 #h{
     font-size: 3rem;
