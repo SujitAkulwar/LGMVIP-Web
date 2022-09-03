@@ -16,13 +16,15 @@
     <div class="left">
     <h2>PHP Form Validation Example</h2>
 
-    <form name='registration' onclick='formValidation();'>  
+    <form>  
     Name: <input id="name" type="text" name="name" value=""><br><br>
     E-mail: <input id="email" type="text" name="email" value=""><br><br>
     Website: <input id="website" type="text" name="website" value=""><br><br>
     Gender:<input id="gender" type="radio" name="gender" value="female">Female<input id="gender" type="radio" name="gender" value="male">Male<br><br>
-    <input type="button" name="submit" value="Submit">
-    photo: <input type="button" value="" onclick="addphoto()">  
+    skill: <input id="skill" type="checkbox" name="skill" value="c++">c++<input id="skill" type="checkbox" name="skill" value="java">java<input id="skill" type="checkbox" name="skill" value="python">python<br><br>
+    photo: <input type="button" value="" onclick="addphoto()"><br><br>
+    <input type="button" name="submit" value="Enroll Student" onclick='formValidation()'>
+    
     </form>
 
   </div>
