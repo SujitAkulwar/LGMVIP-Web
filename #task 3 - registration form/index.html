@@ -8,7 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <script src="script.js"></script>
+  <header>
+    student enrollment form
+  </header>
+
+  <div class="main">
+    <div class="left">
+    <h2>PHP Form Validation Example</h2>
+
+    <form name='registration' onclick='formValidation();'>  
+    Name: <input id="name" type="text" name="name" value=""><br><br>
+    E-mail: <input id="email" type="text" name="email" value=""><br><br>
+    Website: <input id="website" type="text" name="website" value=""><br><br>
+    Gender:<input id="gender" type="radio" name="gender" value="female">Female<input id="gender" type="radio" name="gender" value="male">Male<br><br>
+    <input type="button" name="submit" value="Submit">
+    photo: <input type="button" value="" onclick="addphoto()">  
+    </form>
+
+  </div>
+
+  <div class="right">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
