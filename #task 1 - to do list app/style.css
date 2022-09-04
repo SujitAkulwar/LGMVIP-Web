@@ -5,8 +5,11 @@
     font-weight: 600;
     font-family: 'Poppins';
     cursor: pointer;
+    text-align: center;
 }
 body{
+    max-width: 70vh;
+    margin: auto;
     height: 100%;
     width: 100%;
     background: linear-gradient(to right,rgb(31, 192, 255),rgb(255, 153, 170));
@@ -17,12 +20,10 @@ h1{
     margin-top: 5%;
     color: black;
     text-shadow: 1px 1px rgb(255, 255, 255);
-    margin-left: 38rem;
 }
 .container{
     width: 60vh;
     height: 100%;
-    margin-left: 30%;
     margin-top: 1%;
 }
 #form{
@@ -53,7 +54,6 @@ h1{
 .list{
     padding: 0;
     margin: 0;
-    margin-left: 30%;
 }
 #tasks,nav{
     display: flex;
@@ -93,7 +93,6 @@ h1{
 }
 #h{
     font-size: 3rem;
-    margin-left: 35rem;
 }
 #task{
     margin-top: 5vh;

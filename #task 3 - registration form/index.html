@@ -9,27 +9,27 @@
 </head>
 <body>
   <header>
-    student enrollment form
+    Student Enrollment Form
   </header>
 
   <div class="main">
     <div class="left">
-    <h2>PHP Form Validation Example</h2>
-
-    <form>  
-    Name: <input id="name" type="text" name="name" value=""><br><br>
-    E-mail: <input id="email" type="text" name="email" value=""><br><br>
-    Website: <input id="website" type="text" name="website" value=""><br><br>
-    Gender:<input id="gender" type="radio" name="gender" value="female">Female<input id="gender" type="radio" name="gender" value="male">Male<br><br>
-    skill: <input id="skill" type="checkbox" name="skill" value="c++">c++<input id="skill" type="checkbox" name="skill" value="java">java<input id="skill" type="checkbox" name="skill" value="python">python<br><br>
-    photo: <input type="button" value="" onclick="addphoto()"><br><br>
-    <input type="button" name="submit" value="Enroll Student" onclick='formValidation()'>
-    
-    </form>
+      <p class="t2">student entry</p>
+      <br>
+      <form>  
+      Name :  <input id="name" type="text" name="name" value=""><br><br>
+      E-mail :  <input id="email" type="text" name="email" value=""><br><br>
+      Website :  <input id="website" type="text" name="website" value=""><br><br>
+      Gender :  <input id="gender" type="radio" name="gender" value="female" onclick="setgender('female')"> Female <input id="gender" type="radio" name="gender" value="male"  onclick="setgender('male')"> Male <br><br>
+      Skill :  <input id="skill" type="checkbox" name="skill" value="c++" onclick="setcpp()"> C++ <input id="skill" type="checkbox" name="skill" value="java" onclick="setjava()"> Java <input id="skill" type="checkbox" name="skill" value="python"  onclick="setpython()"> Python <br><br>
+      photo :  <input type="button" value="Add Photo" onclick="addphoto()"><br><br>
+      <input type="button" name="submit" value="Enroll Student" onclick='formValidation()'>
+      </form>
 
   </div>
 
   <div class="right">
+
   </div>
 
   <script src="script.js"></script>
