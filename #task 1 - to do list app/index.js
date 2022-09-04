@@ -15,7 +15,6 @@ function add(){
         const nav = document.createElement("nav");
         nav.innerHTML = `<input type="checkbox" id="check"><div id="task-name" onclick="done(this)">`+text+`</div>
         <button id="delete-task" onclick="del(this)">X</button>`;
-        nav.setAttribute
         list.append(nav);
     }
 }
