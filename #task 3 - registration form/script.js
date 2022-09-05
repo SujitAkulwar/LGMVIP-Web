@@ -2,7 +2,8 @@ var gender = null;
 var cpp="",python="",java="";
 var c1=0,c2=0,c3=0;
 var right = document.getElementById("right");
-img = "1.jpg";
+var img = "./img/1.jpg";
+
 function setcpp(){
     c1++;
     if(c1%2==1){
@@ -45,12 +46,12 @@ function formValidation(){
     }
     else{
         alert("fill complete form !")
-        
     }
 }
 
 function addphoto(){
-    
+    img.setAttribute("type", "image");
+    img = document.getElementById("myImage");
 }
 
 function ADDdata(name,email,website,gender,skill,img){

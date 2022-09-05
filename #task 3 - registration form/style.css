@@ -10,6 +10,7 @@
 body{
     height: 100%;
     width: 100%;
+    background: linear-gradient(to right,rgb(130, 220, 255),rgb(100, 200, 255),rgb(70, 180, 255),rgb(60, 160, 255));
 }
 header{
     height: 10vh;
@@ -61,4 +62,5 @@ input{
     text-align: left;
     padding-left: 1vh;
     padding-right: 1vh;
+    background: linear-gradient(to left,rgba(0, 200, 255, 0.8),rgba(220, 255, 255, 0.5),rgba(0, 200, 255, 0.8));
 }
