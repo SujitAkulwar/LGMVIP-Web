@@ -15,7 +15,7 @@
 
   <div class="main">
     <div class="left">
-      <h1 class="t2">student entry</h1>
+      <h1 class="t2">Register</h1>
       <br>
       <form>  
       Name :  <input id="name" type="text" name="name" value=""><br><br>
@@ -23,13 +23,14 @@
       Website :  <input id="website" type="text" name="website" value=""><br><br>
       Gender :  <input id="gender" type="radio" name="gender" value="female" onclick="setgender('female')"> Female <input id="gender" type="radio" name="gender" value="male"  onclick="setgender('male')"> Male <br><br>
       Skill :  <input id="skill" type="checkbox" name="skill" value="c++" onclick="setcpp()"> C++ <input id="skill" type="checkbox" name="skill" value="java" onclick="setjava()"> Java <input id="skill" type="checkbox" name="skill" value="python"  onclick="setpython()"> Python <br><br>
-      photo :  <input id="photo" type="button" name="photo" value="Add Photo" onclick="addphoto()"><br><br>
+      photo :  <input id="imgupload" type="file" name="photo" placeholder="Photo" accept=".jpg, .jpeg, .png" required="" capture><br><br>
       <input type="button" name="submit" value="Enroll Student" onclick='formValidation()'>
       </form>
 
   </div>
 
   <div class="right" id="right">
+    <h1 class="t2">Student entry</h1>
     <ul>
       <li>
         <p>Name : Sujit Akulwar</p>

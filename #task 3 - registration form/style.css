@@ -15,8 +15,10 @@ body{
 header{
     height: 10vh;
     width: 100%;
-    font-size: 8vh;
+    font-size: 6vh;
+    padding-top: 3vh;
     text-align: center;
+    font-weight: 900;
 }
 .main{
     display: flex;
@@ -30,9 +32,9 @@ header{
     border-right: 5px solid;
 }
 .right{
-    margin-top: 10vh;
+    margin: auto;
+    margin-top: 0vh;
     width: 40%;
-    margin-left: 10%;
 }
 .t2{
     font-size: 4vh;
@@ -40,10 +42,13 @@ header{
 ul{
     list-style: none;
     display: flex;
+    margin-top: 5vh;
 }
 li{
     border: 1px solid;
     padding: 1vh;
+    background-color: rgb(124, 209, 255);
+    word-wrap: break-word;
 }
 p{
     display: flex;
@@ -55,12 +60,13 @@ p{
 img{
     height: 15vh;
     float: right;
-    margin-left: 5vh;
-    margin: 0;
 }
 input{
     text-align: left;
     padding-left: 1vh;
     padding-right: 1vh;
     background: linear-gradient(to left,rgba(0, 200, 255, 0.8),rgba(220, 255, 255, 0.5),rgba(0, 200, 255, 0.8));
+}
+#imgupload{
+    width: 20vh;
 }
