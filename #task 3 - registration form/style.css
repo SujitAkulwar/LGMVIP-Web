@@ -59,6 +59,7 @@ p{
 }
 img{
     height: 15vh;
+    width: 15vh;
     float: right;
 }
 input{
@@ -66,7 +67,4 @@ input{
     padding-left: 1vh;
     padding-right: 1vh;
     background: linear-gradient(to left,rgba(0, 200, 255, 0.8),rgba(220, 255, 255, 0.5),rgba(0, 200, 255, 0.8));
-}
-#imgupload{
-    width: 20vh;
 }

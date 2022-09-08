@@ -1,8 +1,8 @@
-var gender = null;
-var cpp="",python="",java="";
+var gender = "";
+var cpp="",python="",java="",img='';
 var c1=0,c2=0,c3=0;
 var right = document.getElementById("right");
-var img = "./img/1.jpg";
+var skill = "";
 
 function setcpp(){
     c1++;
@@ -39,19 +39,15 @@ function formValidation(){
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var website = document.getElementById("website").value;
-    var skill = cpp+" "+java+" "+python;
+    img = document.getElementById("imglink").value;
+    setSkill();
     console.log(name,email,website,gender,skill);
-    if(name!=null && name!="" &&  email!=null && email!="" && website!=null && website!="" && gender!="" && skill!="  " && skill!="" && img!=""){
+    if(name!=null && name!="" &&  email!=null && email!="" && website!=null && website!="" && gender!="" && gender!=null && skill!="  " && skill!="" && img!=""){
         ADDdata(name,email,website,gender,skill,img);
     }
     else{
         alert("fill complete form !")
     }
-}
-
-function addphoto(){
-    img.setAttribute("type", "image");
-    img = document.getElementById("myImage");
 }
 
 function ADDdata(name,email,website,gender,skill,img){
@@ -68,4 +64,41 @@ function ADDdata(name,email,website,gender,skill,img){
         <img src="`+img+`" alt="">
     </li>`
     right.append(ul);
+    resetValues();
+}
+
+function resetValues(){
+    skill = "";
+}
+
+function setSkill(){
+    if(cpp==""){
+        if(java==""){
+            if(python==""){
+                //null value
+            }else{
+                skill = python;
+            }
+        }else{
+            if(python==""){
+                skill = java;
+            }else{
+                skill = java + ", " + python;
+            }
+        }
+    }else{
+        if(java==""){
+            if(python==""){
+                skill = cpp;
+            }else{
+                skill = cpp + ", " + python;
+            }
+        }else{
+            if(python==""){
+                skill = cpp + ", " + java;
+            }else{
+                skill = cpp + ", " + java + ", " + python;
+            }
+        }
+    }
 }
